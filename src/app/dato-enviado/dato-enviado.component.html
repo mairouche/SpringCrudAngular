@@ -1,4 +1,4 @@
-
+<div *ngIf="Usuario" >
 <h1>Detalle de Usuario</h1>
 <p>
   El usuario elegido es <b>{{Usuario.nombre}} {{Usuario.apellido}}</b> con Id:<b>{{Usuario.id}}</b> 
@@ -11,5 +11,5 @@
   <p>Email: <b>{{Usuario.email}}</b></p>
 
   <button (click)="volver($evento)" type="button" class="btn btn-primary boton" > Volver</button>  
- 
+ </div>
 
