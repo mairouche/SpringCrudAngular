@@ -1,0 +1,21 @@
+<h3></h3>
+
+
+
+
+<usuario-lista 
+[usuarios] ="usuarios" 
+(borrarUsuarioEvento)="borrar($event)"
+(editarUsuarioEvento)= "editar($event)"
+></usuario-lista>
+
+<button (click)="anadir($evento)" type="button" class="btn btn-outline-primary boton" > Añadir</button>
+
+    <usuario-nuevo (crearNuevoUsuarioEvento)="crear($event)" *ngIf="activo"></usuario-nuevo>
+ 
+    <button (click)="buscar($evento)" type="button" class="btn btn-outline-primary boton" > Buscar</button>
+
+    <usuario-buscar [usuEma] ="usuEma"  (usuarioBuscarEvento)="buscarEmail($event)" *ngIf="activoB" ></usuario-buscar>
+ 
+    <button (click)="logOut($evento)" type="button" class="btn btn-outline-primary boton" > logOut</button>  
+ 

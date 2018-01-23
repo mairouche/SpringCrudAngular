@@ -1,0 +1,49 @@
+<div class="contenido">
+<h3>Añadir Usuario</h3>
+
+<form (submit)="crear()" ngNativeValidate >
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      
+      <input type="text" name="nombre" [(ngModel)]="nuevoUsuario.nombre" class="form-control" id="nombre" placeholder="Nombre" required>
+    </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        
+        <input type="text" name="apellido" [(ngModel)]="nuevoUsuario.apellido" class="form-control" id="apellido" placeholder="Apellido" required>
+      </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          
+          <input type="tel" name="telefono" [(ngModel)]="nuevoUsuario.telefono" class="form-control" id="telefono" placeholder="Telefono" required>
+        </div>
+        </div>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          
+          
+          <input type="email" name="email" [(ngModel)]="nuevoUsuario.email" class="form-control" id="email" placeholder="Email" required>
+        </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-md-6">
+              
+              
+              <input type="text" name="puestotrabajo" [(ngModel)]="nuevoUsuario.puestotrabajo" class="form-control" id="puestotrabajo" placeholder="Puesto de Trabajo" required>
+            </div>
+            </div>
+
+        <div class="form-row">
+          <div class="form-group col-md-6">
+             <input type="text" name="aniosempresa" [(ngModel)]="nuevoUsuario.aniosempresa" class="form-control" id="aniosempresa" placeholder="Años en la Empresa" required>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary boton" > Enviar</button>
+    
+        
+      
+</form>
+</div>

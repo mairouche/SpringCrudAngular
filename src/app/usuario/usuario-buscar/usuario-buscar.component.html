@@ -1,0 +1,46 @@
+<div class="contenido">
+    <h3>Buscar usuario</h3>
+    <form (submit)="buscar()" ngNativeValidate>
+        
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                
+                <input type="email" name="email"  [(ngModel)]="usuarioBuscar.email" class="form-control" id="email" placeholder="Email" required>
+              </div>
+              </div>
+         
+          <button type="submit" class="btn btn-primary boton" > Enviar</button>
+        </form>
+             
+         
+       
+        <label *ngIf="!usuEma ">Email no encontrado intentelo con otro</label>
+      
+      <table class="table" *ngIf="usuEma">
+          <thead>
+            <tr>
+              <th scope="col">ID</th>
+              <th scope="col">Nombre</th>
+              <th scope="col">Apellidos</th>
+              <th scope="col">Telefono</th>
+              <th scope="col">Email</th>
+              
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>{{usuEma.id}}</td>
+              <td>{{usuEma.nombre}}</td>
+              <td>{{usuEma.apellido}}</td>
+              <td>{{usuEma.telefono}}</td>
+              <td>{{usuEma.email}}</td>
+              
+            </tr>
+            
+          </tbody>
+        
+          
+          
+        </table>
+      </div>
+      

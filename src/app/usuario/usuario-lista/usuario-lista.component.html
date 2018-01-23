@@ -1,0 +1,37 @@
+<div class="contenido">
+  <h3>Gestión de Usuarios</h3>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Nombre</th>
+      <th scope="col">Apellidos</th>
+      <th scope="col">Telefono</th>
+      <th scope="col">Email</th>
+      <th></th> 
+      <th></th> 
+      <th></th> 
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor=" let usuario of usuarios">
+      <td>{{usuario.id}}</td>
+      <td>{{usuario.nombre}}</td>
+      <td>{{usuario.apellido}}</td>
+      <td>{{usuario.telefono}}</td>
+      <td>{{usuario.email}}</td>
+      <td><button (click)="borrar(usuario)" type="button" class="btn btn-danger" > Borrar</button></td>
+      <td><button (click)="usuario.editable = !usuario.editable" type="button" class="btn btn-info" > Editar</button></td>
+      <td><button (click)="enviar($event,usuario)" type="button" class="btn btn-light" > Enviar</button></td>
+    </tr>
+    
+  </tbody>
+
+  
+  
+</table>
+</div>
+<div *ngFor=" let usuario of usuarios">
+
+  <usuario-editar [usuario] = "usuario" (usuarioEditadoEvento)="editar($event)" *ngIf="usuario.editable"></usuario-editar>
+</div>
