@@ -51,7 +51,6 @@ export class UsuarioService {
 
   findById(id: number): Observable<Usuario> {
     return this._http.get(this.apiUrl + '/' + id)
-      .map((res:Response) => res.json())
       .catch((error:any) => Observable.throw(error.json().error || 'Error'));
   }
 
