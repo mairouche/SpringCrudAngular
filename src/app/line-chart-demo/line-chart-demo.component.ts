@@ -161,6 +161,18 @@ public lineChartType = 'bar';
   volver(evento){
     this.router.navigate(["/contactos"]);
   }
+  
+  /*
+    public doughnutChartLabels:string[] = ['','Nota'];
+  nota:number = 7.5;
+  sobre_diez:number =(10-this.nota)
+  public doughnutChartData:number[] = [this.sobre_diez, this.nota];
+  public doughnutChartType:string = 'doughnut';
+  
+
+    private doughnutChartColors: any[] = [{ backgroundColor: ["#FFFFFF", "#00fc01"] }]
+
+*/
 
 
 
