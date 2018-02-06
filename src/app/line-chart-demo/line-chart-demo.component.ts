@@ -88,6 +88,10 @@ public lineChartType = 'bar';
   public lineChartData
   public lineChartOptions: any = {
     responsive: true,
+    /* legend: {
+      display: false,
+      
+  },*/
     scales: {
       yAxes: [{
           ticks: {
@@ -104,34 +108,35 @@ public lineChartType = 'bar';
   public lineChartColors:Array<any> = [
     { // Morado
       backgroundColor: 'rgba(86,16,156,0.4)',
-      borderColor: 'rgba(148,159,177,1)',
-      pointBackgroundColor: 'rgba(148,159,177,1)',
+      borderColor: 'rgba(86,16,156,0.8)',
+      borderWidth: 2,
+      pointBackgroundColor: 'rgba(86,16,156,1)',
       pointBorderColor: '#fff',
-      pointHoverBackgroundColor: '#fff',
-      pointHoverBorderColor: 'rgba(148,159,177,0.8)'
+      pointHoverBackgroundColor: 'rgba(86,16,156,0.8)',
+      pointHoverBorderColor: 'rgba(86,16,156,0.8)'
     },
     { // Verde
-      backgroundColor: 'rgba(175,246,95,0.4)',
-      borderColor: 'rgba(175,246,95,1)',
+      backgroundColor: 'rgba(175,246,95,0.5)',
+      borderColor: 'rgba(175,246,95,0.8)',
       pointBackgroundColor: 'rgba(175,246,95,1)',
       pointBorderColor: '#fff',
-      pointHoverBackgroundColor: '#fff',
+      pointHoverBackgroundColor: 'rgba(175,246,95,1)',
       pointHoverBorderColor: 'rgba(175,246,95,1)'
     },
     { // Azul
-      backgroundColor: 'rgba(77,240,243,0.4)',
-      borderColor: 'rgba(77,240,243,1)',
+      backgroundColor: 'rgba(77,240,243,0.5)',
+      borderColor: 'rgba(77,240,243,0.8)',
       pointBackgroundColor: 'rgba(77,240,243,1)',
       pointBorderColor: '#fff',
-      pointHoverBackgroundColor: '#fff',
+      pointHoverBackgroundColor: 'rgba(77,240,243,1)',
       pointHoverBorderColor: 'rgba(77,240,243,1)'
     },
     { // Maranja
-      backgroundColor: 'rgba(255, 123, 15,0.4)',
-      borderColor: 'rgba(255,123,15,1)',
+      backgroundColor: 'rgba(255, 123, 15,0.5)',
+      borderColor: 'rgba(255,123,15,0.8)',
       pointBackgroundColor: 'rgba(255,123,15,1)',
       pointBorderColor: '#fff',
-      pointHoverBackgroundColor: '#fff',
+      pointHoverBackgroundColor: 'rgba(255,123,15,1)',
       pointHoverBorderColor: 'rgba(255,123,15,1)'
     }
     
