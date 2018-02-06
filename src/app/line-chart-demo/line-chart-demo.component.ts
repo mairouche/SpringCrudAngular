@@ -78,6 +78,37 @@ getMedia(){
     
   );
 }
+  /*
+  Si se utiliza el de Clave valor
+  getMedia(){
+  this._usuarioService.getMedia<Usuario[]>()
+  .subscribe((data: Usuario[]) => this.usuario = data,
+    error => () => {
+      console.log("Error");
+
+    },
+    ()=>{
+      console.log("Exito");
+
+     
+
+     var _pieChartLabels= new Array(this.usuario.length);
+      var _pieChartData= new Array(this.usuario.length);
+  for (let i = 0; i < this.usuario.length; i++) {
+    
+      _pieChartLabels[i] = this.usuario[i].puestotrabajo
+      _pieChartData[i] = this.usuario[i].avg
+    }
+    
+      
+    this.pieChartLabels = _pieChartLabels;
+    this.pieChartData = _pieChartData;
+      this.dataAvaliablePie= true
+      
+    }
+    
+  );
+}*/
 
 //Bar
 public lineChartLabels:string[] = ['2006', '2007','2008'];
